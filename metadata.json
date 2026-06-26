@@ -1,0 +1,6 @@
+{
+  "name": "Forge Performance",
+  "description": "High-energy athletic performance club dashboard featuring interactive workouts, trainer gallery, class booking, and plan billing management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

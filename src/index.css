@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Space+Grotesk:wght@300..700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-headline: "Space Grotesk", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Space Grotesk", sans-serif;
+  --font-serif: "Playfair Display", "Georgia", serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-background: #050505;
+  --color-surface-dim: #050505;
+  --color-surface-bright: #27272a;
+  --color-surface-container-lowest: #09090b;
+  --color-surface-container-low: #0c0c0e;
+  --color-surface-container: #18181b;
+  --color-surface-container-high: #27272a;
+  --color-surface-container-highest: #3f3f46;
+  --color-on-surface: #f4f4f5;
+  --color-on-surface-variant: #a1a1aa;
+  --color-outline: #52525b;
+  --color-outline-variant: #27272a;
+  --color-primary-fixed: #ffffff; /* White/Silver Accent */
+  --color-primary-fixed-dim: #e4e4e7;
+  --color-surface-variant: #18181b;
+  --color-secondary-container: #27272a;
+  --color-on-secondary-container: #f4f4f5;
+}
+
+/* Custom styles and overrides */
+body {
+  background-color: #050505;
+  color: #f4f4f5;
+  font-family: "Inter", sans-serif;
+}
+
+/* Custom Scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+/* Elegant minimalist styling details */
+.volt-glow {
+  box-shadow: 0 0 25px -5px rgba(255, 255, 255, 0.15);
+}
+
+.kinetic-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.kinetic-card:hover {
+  transform: translateY(-4px);
+  border-color: #ffffff;
+  background-color: #0c0c0e;
+}
+
+.left-accent {
+  position: relative;
+}
+
+.left-accent::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  bottom: -1px;
+  width: 4px;
+  background-color: #ffffff;
+  transition: width 0.2s ease;
+}
+
+.left-accent:hover::before {
+  width: 6px;
+}
