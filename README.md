@@ -6,7 +6,7 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/cab037b1-2972-49b7-b943-62311e2cdaf8
+View your app in AI Studio: https://forge-performance-807484421503.asia-southeast1.run.app/
 
 ## Run Locally
 
